@@ -1,0 +1,9 @@
+---
+- name: install httpd service
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Insatll the service
+      module: Service
+      state: Present
